@@ -2,4 +2,4 @@
 Practise with git, html and css
 
 
-![Text](img/screencapture.png)
+![This website is result of this project!](https://ibb.co/bOTucc)
