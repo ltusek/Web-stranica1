@@ -14,6 +14,11 @@ body{
     display: none;
 }
 
+.summary a{
+    color: transparent;
+    width: 198px;
+    display: inline-block;
+}
 .page-wrapper .intro header{
     height: 319px;
     background-image: url("img/header.jpg");
@@ -136,4 +141,15 @@ aside footer a:hover, a:active {
 
 .page-wrapper{
     margin-bottom: 30px;
+}
+
+.extra1{
+    background-image: url("img/the_beauty.gif");
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 37px;
+    height: 433px;
+    left: 50%;
+    top: 0%;
+    margin-left: -237px;
 }
