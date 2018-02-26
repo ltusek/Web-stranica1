@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 396px;
+    margin: 0 auto;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.none{
+    display: none;
+}
+
+.page-wrapper .intro header{
+    height: 319px;
+    background-image: url("img/header.jpg");
+}
+
+.page-wrapper .intro .summary{
+    height: 25px;
+    background-image: url("img/download.gif");
+}
+
+#zen-supporting{
+    background-image: url("img/background.gif");
+    background-repeat: repeat-y;
+    
+    padding: 22px 30px 0px;
+    
+}
+
+#zen-supporting h3{
+    text-align: center;
+    background-image: url("img/header_bg.gif");
+    padding: 6px 0px;
+    font-size: 16.8px;
+    margin: 3px 0px;
+}
+
+#zen-supporting p{
+    padding: 6px 0px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+#zen-supporting abbr{
+    color: rgb(188, 208, 229);
+    text-decoration: underline dotted;
+}
+
+#zen-supporting a:link, a:visited {
+    color: white;
+}
+
+#zen-supporting a:hover, a:active {
+    color: rgb(188, 208, 229);
+    text-decoration-line: none;
+}
+
+.wrapper{
+    background-image: url("img/background2.gif");
+    background-repeat: repeat-y;
+    padding: 30px;
+    font-size: 12px;
+    padding-bottom: 75px;
+}
+
+.wrapper h3{
+    color: transparent;
+    background-repeat: no-repeat;
+    padding: 10px 0px;
+}
+
+.wrapper h3.select{
+    background-image: url("img/header_design.gif");
+}
+
+.wrapper h3.archives{
+    background-image: url("img/header_archives.gif");
+}
+
+.wrapper h3.resources{
+    background-image: url("img/header_resources.gif");
+}
+
+.wrapper ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.wrapper ul li{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #365779;
+    padding-left: 10px;
+}
+
+.wrapper ul li:hover{
+    background-color: #365779;
+}
+
+.wrapper a:link, a:visited{
+    color: #ffa94d;
+    text-decoration-line: none;
+}
+
+.wrapper a.designer-name{
+    color: #bcd0e5;
+}
+
+.wrapper a:hover, a:active{
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+aside footer{
+    background-image: url("img/footer.gif");
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 13px;
+}
+
+aside footer a:link, a:visited {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+aside footer a:hover, a:active {
+    color: rgb(188, 208, 229);
+    text-decoration-line: none;
+}
+
+.page-wrapper{
+    margin-bottom: 30px;
+}
