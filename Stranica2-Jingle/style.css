@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("img/bells.png");
+    background-repeat: repeat;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1{
+    color: red;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.7em;
+}
+
+header h1{
+    padding: 5px 35px 10px 0px;
+    text-align: right;
+    background-image: url("img/bell.png");
+    background-position: right 5px;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+header aside img{
+    width: 100%;
+    display: block;
+}
+
+nav ul{
+    list-style-type: none;
+    overflow: auto;
+    width: 100%;
+    background-color: red;
+}
+
+nav ul li{
+    width: 20%;
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px 0px;
+    text-decoration: none;
+    font-size: 1.0em;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: red;
+    background-image: url("img/snowflake.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+article h1{
+    text-align: right;
+    margin: 5px 0px 45px;
+}
+
+article h1 span{
+    color: blue;
+}
+
+article main{
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+article main img{
+    display: block;
+    float: left;
+    width: 33.33%;
+    padding-right: 5px;
+}
+
+article h2{
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article p{
+    color: red;
+    font-size: 16px;
+    line-height: 1.8em;
+    text-align: center;
+    margin: 0px auto 25px;
+    width: 22%; 
+}
+
+footer{
+    background-color: red;
+}
+
+footer h3{
+    color: white;
+    padding: 25px 0px 20px 25px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+@media(max-width: 700px){
+    nav ul li{
+        width: 100%;
+    }
+
+    article main img{
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 5px;
+    }
+
+    article h1{
+        margin-bottom: 10px;
+    }
+
+    article p{
+        width: 40%;
+    }
+}
+
