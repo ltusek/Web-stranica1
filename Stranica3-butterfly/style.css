@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    padding:15px 0px;
+}
+
+section{
+    overflow: auto;
+    width: 100%;
+}
+
+section iframe{
+    float: left;
+    width:50%;
+}
+
+article{
+    padding: 100px 0px 80px;
+    overflow: auto;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.6em;
+}
+
+article h1{
+    margin-bottom: 40px;
+}
+
+article figure{
+    float: left;
+    width: 33.33%;
+}
+
+article figure .ikone{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+    margin: 0 auto 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+article figure .ikone i{
+    transition: opacity 0.5s, font-size 0.5s;
+    font-size: 45px;
+    line-height: 1.8em;
+}
+
+article figure .ikone i:hover{
+    font-size: 50px;
+    opacity: 0.7;
+    line-height: 1.7em;
+}
+
+article figure:nth-child(2) .ikone{
+    background-color: rgb(245, 110, 171);
+}
+
+article figure:nth-child(3) .ikone{
+    background-color: rgb(124, 197, 118);
+}
+
+article figure:nth-child(4) .ikone{
+    background-color: rgb(73, 181, 231);
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+p{
+    text-align: center;
+    color: rgb(136, 136, 136);
+}
+
+article figure p{
+    width: 86%;
+    margin: 0 auto;
+    line-height: 1.6em;
+}
+
+aside{
+    background-color: rgb(244, 241, 241);
+    padding: 150px 0px;
+    transition: background-color 1s;
+    margin-bottom: 50px;
+}
+
+aside:hover{
+    background-color: cyan;
+    cursor: pointer;
+}
+
+aside h1{
+    padding-bottom: 30px;
+}
+
+footer{
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+footer h1{
+    margin-bottom: 70px;
+}
+
+footer figure{
+    width: 25%;
+    float: left;
+    color: rgb(41, 176, 230);
+}
+
+footer main{
+    width: 75%;
+    float: left;
+    padding: 0px 10px;
+}
+
+.clear{
+    clear: both;
+    float: right;
+}
+
+footer figure img{
+    border-radius: 50%;
+    width: 100%;
+    display: block;
+}
+
+footer figure h2{
+    color: rgb(105, 205, 245);
+    margin: 15px 0px 20px;
+}
+
+footer main p{
+    width: 90%;
+    display: block;
+    background-color: rgb(249, 249, 249);
+    margin: 20px auto;
+    padding: 45px 20px;
+    font-style: italic;
+    line-height: 1.7em;
+}
+
+footer main p::before{
+    content: url("img/quote_sign_left.png");
+}
+
+footer main p::after{
+    content: url("img/quote_sign_right.png");
+}
+
+
+@media(max-width: 700px){
+    section iframe{
+        width: 100%;
+    }
+    header{
+        padding-left: 20px;
+    }
+
+    article figure{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    footer figure, footer main{
+        width: 100%;
+    }
+
+    footer figure img{
+        width: auto;
+        margin: 0 auto;
+    }
+
+    footer main p {
+        width: 97%;
+    }
+}
