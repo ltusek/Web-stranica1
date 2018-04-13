@@ -5,12 +5,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: #f8f8f8;
+}
+
 header{
     height: 600px;
-    background-image: url("img/back2.jpg");
-    background-size: cover;
-    background-position: center center;
-
+    background-image: url("img/back4.png");
+    background-size: 100% 100%;
+    background-repeat:  no-repeat;
     text-align: center;
 }
 
@@ -27,7 +30,7 @@ h1{
 
     margin-bottom: 15px;
     font-size: 3.5em;
-
+    visibility: hidden;
 }
 
 p{
@@ -39,6 +42,7 @@ header p{
     text-align: center;  
     text-transform: uppercase;
     margin-bottom: 20px;
+    visibility: hidden;
 }
 
 .wrapper{
@@ -233,7 +237,7 @@ aside iframe:last-child{
 
 @media(min-width: 601px) and (max-width: 900px){
     nav ul li{
-        width: 33.33%;
+        width: 25%;
     }
 
     article figure:not(.ikons){

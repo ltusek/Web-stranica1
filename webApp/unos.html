@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome To Auto/Moto CRO</h1>
+        <p>Auto/Moto is a used car dealer in Croatia offering high quality vehicles.</p>
+    </header>
+    <nav>
+        <ul class="wrapper">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="onama.html">O nama</a>
+            </li>
+            <li>
+                <a href="#" class="active">Unos</a>
+            </li>
+            <li>
+                <a href="https://www.tvz.hr/" target="_blank">TVZ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <article class="wrapper">
+
+        <form action="skripta.php" name="forma" method="POST">
+
+            <label for="name">Naziv automobila:</label>
+            <input name="name" type="text" placeholder="Unesi naziv:">
+            <label for="sifra">Sifra:</label>
+            <input name="sifra" type="text" placeholder="Unesi sifru:">
+
+            <select required name="kategorija">
+                <option value="">Odaberite vrstu:</option>
+                <option value="sportski">sportski</option>
+                <option value="sedan">sedan</option>
+                <option value="limuzina">limuzina</option>
+                <option value="coupe">coupe</option>
+                <option value="suv">suv</option>
+            </select>
+
+            <label for="opis">Opis: </label>
+            <textarea name="opis"></textarea>
+
+            <label for="cijena">Cijena:</label>
+            <input name="cijena" type="text">
+
+            <label for="slika">Slika:</label>
+            <input type="file" name="slika" id="fileToUpload">
+
+            <p>Zelite li arhivirati:</p>
+            <input type="radio" name="arhiviraj" value="da"/><label>DA</label>
+            <input type="radio" name="arhiviraj" value="ne" /><label>NE</label>
+
+            <label for="submit">Posalji: </label><input name="submit" type="submit" value="Posalji!">
+
+        </form>
+
+    </article>
+
+    <footer>
+        <img src="img/logo1.png" alt="">
+        <p>Tehničko veleučilište u Zagrebu</p>
+        <p>Autor: Lovro Tušek</p>
+    </footer>
+</body>
+
+</html>
