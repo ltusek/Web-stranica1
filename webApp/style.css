@@ -235,6 +235,69 @@ aside iframe:last-child{
     
 }
 
+form{
+    max-width: 1000px;
+    margin: 50px auto;
+    overflow: auto;
+    width: 100%;
+    padding: 15px;
+}
+
+#form_element{
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form label{
+    display: block;
+    width: 10%;
+    text-align: left;
+    float: left;
+    font-size: 1.3em;
+    line-height: 1.9em;
+}
+
+#arh{
+    display: block;
+    width: 30px;
+    height: 40px;
+}
+
+form select{
+    float: left;
+    height: 40px;
+}
+
+form textarea{
+    height: 100px;
+}
+
+form input,textarea,select{
+    width: 80%;
+    float: left;
+    height: 40px;
+    font-size: 1.3em;
+}
+
+#form_element:last-of-type{
+    padding-left: 40%;
+}
+
+form input[type=submit], input[type=reset]{
+    width: 100px;
+    float: none;
+    margin-right: 10px;
+}
+
+#kategorija_naslov h4{
+    color: cyan;
+}
+
+#cijena{
+    color: rgb(226, 21, 21);
+}
+
 @media(min-width: 601px) and (max-width: 900px){
     nav ul li{
         width: 25%;

@@ -37,27 +37,57 @@
     </nav>
 
     <article class="wrapper">
+        <h2>Automobili na prodaju</h2>
+        <figure>
+            <img src="img/car1.jpg" alt="">
+            <figcaption>
+                <h3>2010 Ford Escape XLT</h3>
+                <div id="kategorija_naslov">
+                    <h4>Kategorija: SUV</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                </div>
+                <p id="cijena">Cijena: 80,000 kn</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="img/car2.jpg" alt="">
+            <figcaption>
+                <h3>2006 Dodge Ram 1500 4dr Quad</h3>
+                <div id="kategorija_naslov">
+                    <h4>Kategorija: Pick-up</h4>
+                    
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                </div>
+                <p id="cijena">Cijena: 105,000 kn</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="img/car3.jpg" alt="">
+            <figcaption>
+            <?php
+                if (isset($_POST['arhiviraj']))
+                {
+                    echo '<h3>' . $_POST['name'] . '</h3>
+                    
+                    <div id="kategorija_naslov">
+                    <h4>Kategorija: ' . $_POST['kategorija'] . '</h4>
+                    <p>' . $_POST['opis'] . '</p></div>
+                    <p id="cijena"> Cijena: ' . $_POST['cijena'] . ' kn </p>';
 
-    <?php
-
-$ime = $_POST['name'];
-$sifra = $_POST["sifra"];
-$kategorija = $_POST["kategorija"];
-$opis = $_POST["opis"];
-$cijena = $_POST["cijena"];
-$arhiviraj = $_POST["arhiviraj"];
-$opis = $_POST["opis"];
-
-echo 'Ime koje ste unijeli je ' . $ime . '<br />';
-echo "<p>" . $sifra . "<p>";
-echo "<p>" . $kategorija . "<p>";
-echo "<p>" . $opis . "<p>";
-echo "<p>" . $cijena . "<p>";
-echo "<p>" . $arhiviraj . "<p>";
-
-
-?>
-        
+                }
+                else
+                {
+                    echo '<p>Novi post se ne prikazuje!</p>';
+                }
+            ?>
+                
+            </figcaption>
+        </figure>
+       
     </article>
 
     <footer>

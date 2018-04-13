@@ -35,37 +35,58 @@
     </nav>
 
     <article class="wrapper">
-
+        <h2>Unesite novi automobil</h2>
         <form action="skripta.php" name="forma" method="POST">
+            <div id="form_element">
+                <label for="name">Naziv:</label>
+                <input name="name" type="text" placeholder="Unesi naziv:">
+            </div>
+            <div id="form_element">
+                <label for="sifra">Sifra:</label>
+                <input name="sifra" type="text" placeholder="Unesi sifru:">
+            </div>
 
-            <label for="name">Naziv automobila:</label>
-            <input name="name" type="text" placeholder="Unesi naziv:">
-            <label for="sifra">Sifra:</label>
-            <input name="sifra" type="text" placeholder="Unesi sifru:">
+            <div id="form_element">
+                <label for="kategorija">Vrsta:</label>
+                <select required name="kategorija">
+                    <option value="">Odaberite vrstu:</option>
+                    <option value="sportski">sportski</option>
+                    <option value="sedan">sedan</option>
+                    <option value="limuzina">limuzina</option>
+                    <option value="coupe">coupe</option>
+                    <option value="suv">suv</option>
+                    <option value="pick-up">suv</option>
+                </select>
+            </div>
 
-            <select required name="kategorija">
-                <option value="">Odaberite vrstu:</option>
-                <option value="sportski">sportski</option>
-                <option value="sedan">sedan</option>
-                <option value="limuzina">limuzina</option>
-                <option value="coupe">coupe</option>
-                <option value="suv">suv</option>
-            </select>
+            <div id="form_element">
+                <label for="opis">Opis: </label>
+                <textarea name="opis"></textarea>
+            </div>
 
-            <label for="opis">Opis: </label>
-            <textarea name="opis"></textarea>
+            <div id="form_element">
+                <label for="cijena">Cijena:</label>
+                <input name="cijena" type="number">
+            </div>
 
-            <label for="cijena">Cijena:</label>
-            <input name="cijena" type="text">
+            <div id="form_element">
+                <label for="image">Slika:</label>
+                <input type="file" name="image" id="fileToUpload">
+            </div>
 
-            <label for="slika">Slika:</label>
-            <input type="file" name="slika" id="fileToUpload">
 
-            <p>Zelite li arhivirati:</p>
-            <input type="radio" name="arhiviraj" value="da"/><label>DA</label>
-            <input type="radio" name="arhiviraj" value="ne" /><label>NE</label>
+            <div id="form_element">
+                <label>Arhiviraj:</label>
+                <input type="checkbox" name="arhiviraj" value="arhiviraj" id="arh" />
 
-            <label for="submit">Posalji: </label><input name="submit" type="submit" value="Posalji!">
+            </div>
+
+            <div id="form_element">
+                <input name="submit" type="submit" value="Posalji!">
+                <input name="reset" type="reset" value="Resetiraj!">
+
+            </div>
+
 
         </form>
 
