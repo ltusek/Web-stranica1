@@ -1,0 +1,26 @@
+ if (isset($_POST['arhiviraj']))
+    {
+        echo '<h3>' . $_POST['name'] . '</h3>
+        
+        <div id="kategorija_naslov">
+        <h4>Kategorija: ' . $_POST['kategorija'] . '</h4>
+        <p>' . $_POST['opis'] . '</p></div>
+        <p id="cijena"> Cijena: ' . $_POST['cijena'] . ' kn </p>';
+
+    }
+    else
+    {
+        echo '<p>Novi post se ne prikazuje!</p>';
+    }
+
+
+
+
+
+
+
+
+     $picture = $_FILES['picture']['name'];
+
+                $target = 'images/' . $picture;
+                move_uploaded_file($_FILES['picture']['tmp_name'], '$target');
